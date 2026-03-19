@@ -1,11 +1,11 @@
 /* --- Глобальные стили и переменные --- */
 :root {
-    --bg-color: #1c1c1e; /* Основной фон */
-    --card-bg-color: #2c2c2e; /* Фон карточек */
-    --text-color: #f2f2f7; /* Основной текст */
-    --text-secondary-color: #8e8e93; /* Вторичный текст (описания, статистика) */
-    --accent-color: #ee9264; /* Сине-фиолетовый акцент */
-    --link-color: #1a82f1; /* Цвет ссылок */
+    --bg-color: #1c1c1e;
+    --card-bg-color: #2c2c2e;
+    --text-color: #f2f2f7;
+    --text-secondary-color: #8e8e93;
+    --accent-color: #ee9264;
+    --link-color: #1a82f1;
     --border-radius: 16px;
 }
 
@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-    text-decoration: none; /* Убираем подчеркивание при наведении для всех ссылок */
+    text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -50,7 +50,7 @@ section {
     margin-bottom: 40px;
 }
 
-/* --- Секция профиля --- */
+/* --- Профиль --- */
 .profile-banner {
     width: 100%;
     border-radius: var(--border-radius);
@@ -62,14 +62,14 @@ section {
 }
 
 .profile-picture {
-    width: 100%; /* Ширина фотографии */
-    height: 200px; /* Высота фотографии (чтобы была квадратной) */
-    border-radius: 12px; /* Скругление углов, как у кнопок */
-    object-fit: cover; /* Сохраняет пропорции изображения, обрезая лишнее */
-    display: block; /* Для возможности использования margin: auto */
-    margin-left: auto; /* Центрирование по горизонтали */
-    margin-right: auto; /* Центрирование по горизонтали */
-    margin-bottom: 20px; /* Отступ снизу до имени */
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .profile-info h1 {
@@ -85,9 +85,9 @@ section {
 }
 
 .btn {
-    display: inline-flex; /* Используем flex для выравнивания содержимого */
-    align-items: center;  /* Вертикальное выравнивание иконки и текста */
-    gap: 8px;  
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 12px 24px;
     border-radius: 12px;
     font-size: 16px;
@@ -95,12 +95,11 @@ section {
     text-decoration: none;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
 .btn:hover {
     text-decoration: none;
     transform: scale(1.03);
 }
-
-
 
 .btn-primary {
     background-color: var(--accent-color);
@@ -121,9 +120,8 @@ section {
     max-width: 90%;
 }
 
-/* Стиль для рекламной ссылки */
 .link-advertisement {
-    color: #2a72db; /* Используем акцентный цвет */
+    color: #2a72db;
 }
 
 /* --- Сетка --- */
@@ -140,7 +138,7 @@ section {
     grid-template-columns: repeat(4, 1fr);
 }
 
-/* --- Стили для карточек --- */
+/* --- Карточки --- */
 .card {
     background-color: var(--card-bg-color);
     border-radius: var(--border-radius);
@@ -153,7 +151,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: relative; /* Для позиционирования дочерних элементов */
+    position: relative;
 }
 
 .card:hover {
@@ -161,7 +159,6 @@ section {
     text-decoration: none;
 }
 
-/* Карточка-ссылка (иконка + текст) */
 .card-link {
     flex-direction: row;
     justify-content: flex-start;
@@ -171,12 +168,11 @@ section {
 }
 
 .card-link-icon {
-    width: 24px; /* Размер иконки */
-    height: 24px; /* Размер иконки */
-    object-fit: contain; /* Чтобы логотип не искажался */
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
-/* Карточка с большой иконкой сверху */
 .card-icon-top {
     padding: 24px 16px;
     font-weight: 500;
@@ -188,23 +184,22 @@ section {
 }
 
 .icon-large-img {
-    width: 40px; /* Ширина логотипа */
-    height: 40px; /* Высота логотипа */
-    object-fit: contain; /* Чтобы логотип не искажался и полностью помещался */
-    margin-bottom: 12px; /* Отступ снизу, как у .icon-large */
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 12px;
 }
 
-/* Карточка только с иконкой */
 .card-icon-only {
     padding: 12px;
     height: 60px;
 }
+
 .icon-small {
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Карточка проекта (лого + заголовок + описание) */
 .card-project {
     align-items: flex-start;
     text-align: left;
@@ -229,20 +224,20 @@ section {
     line-height: 1.4;
 }
 
-/* Контейнер для изображений в ряд */
 .image-row-container {
-    display: flex; /* Располагает дочерние элементы (изображения) в строку */
-    gap: 10px; /* Пространство между изображениями */
-    align-items: center; /* Выравнивает изображения по центру по вертикали, если они разной высоты */
-    margin-bottom: 12px; /* Сохраняем отступ, который был у icon-large-img */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
 .image-row-container .icon-large-img {
-    margin-bottom: 0; /* Убираем индивидуальный нижний отступ у изображений внутри этого контейнера */
+    margin-bottom: 0;
 }
 
+/* --- Страница донатов --- */
 .donate-page .card-project h3 {
-    color: white; /* Белый цвет заголовков на странице донатов */
+    color: white;
 }
 
 .donate-page .profile-info h1 a {
@@ -250,145 +245,239 @@ section {
 }
 
 .donate-page .profile-info h1 {
-    margin-bottom: 10px; /* Уменьшаем отступ под заголовком H1 */
+    margin-bottom: 10px;
 }
 
 .donate-page .profile-info p {
-    margin-top: 0; /* Убедимся, что верхний отступ у параграфа 0 или можно задать свое значение */
+    margin-top: 0;
 }
 
 .donate-page .card-project .copyable-text-container {
-    justify-content: flex-start; /* Выравнивает адрес и иконку по левому краю внутри этого контейнера */
+    justify-content: flex-start;
 }
 
 .donate-page .card-project .copy-feedback {
-    text-align: left; /* Выравнивает текст "Скопировано!" по левому краю */
+    text-align: left;
 }
 
-/* Стили для логотипа способа оплаты */
 .payment-method-logo {
-    height: 21px; /* Высота логотипа */
-    width: auto;  /* Ширина будет подобрана автоматически для сохранения пропорций */
-    object-fit: contain; /* Чтобы логотип не искажался и полностью помещался */
-    margin-bottom: 8px; /* Отступ снизу до заголовка h3 */
+    height: 21px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 8px;
 }
 
-/* Контейнер для логотипа и заголовка способа оплаты */
 .payment-header {
     display: flex;
-    align-items: center; /* Вертикальное выравнивание логотипа и текста по центру */
-    /* Горизонтальное центрирование этой группы обеспечивается родительской .card */
+    align-items: center;
 }
 
 .payment-header .payment-method-logo {
-    margin-bottom: 0; /* Убираем нижний отступ, так как он теперь на .payment-header */
-    margin-right: 8px; /* Отступ справа от логотипа до текста H3 */
+    margin-bottom: 0;
+    margin-right: 8px;
 }
 
-/* Стили для копируемого текста с иконкой */
 .copyable-text-container {
-    display: flex; /* Располагает текст адреса и иконку в одну строку */
-    align-items: center; /* Выравнивает их по центру вертикально */
-    justify-content: center; /* Центрирует содержимое внутри контейнера (полезно для карточки) */
-    flex-wrap: nowrap; /* Запрещает перенос элементов на новую строку */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .address-text {
-    flex-grow: 1; /* Позволяет текстовому блоку занимать доступное пространство */
-    min-width: 0; /* Необходимо для корректного сжатия flex-элемента и переноса текста внутри */
-    word-break: break-all; /* Позволяет длинному адресу переноситься */
-    margin-right: 8px; /* Отступ справа до иконки копирования */
-    cursor: pointer; /* Указывает, что на текст адреса можно нажать */
+    flex-grow: 1;
+    min-width: 0;
+    word-break: break-all;
+    margin-right: 8px;
+    cursor: pointer;
 }
 
 .copy-button-icon {
-    width: 16px; /* Размер иконки */
-    height: 16px; /* Размер иконки */
-    flex-shrink: 0; /* Запрещает иконке сжиматься, если не хватает места */
-    cursor: pointer; /* Указывает, что на иконку можно нажать */
-    vertical-align: middle; /* Лучшее выравнивание с текстом, если он рядом */
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    cursor: pointer;
+    vertical-align: middle;
 }
 
 .copy-feedback {
-    display: block; /* Чтобы сообщение было на новой строке под адресом */
-    font-size: 0.9em; /* Немного меньше основного текста */
-    color: var(--accent-color); /* Цвет сообщения (можно изменить на зеленый, например) */
-    margin-top: -8px; /* Отступ сверху */
-    text-align: center; /* Центрирование текста сообщения */
+    display: block;
+    font-size: 0.9em;
+    color: var(--accent-color);
+    margin-top: -8px;
+    text-align: center;
 }
 
-/* --- Модификаторы сетки --- */
+/* --- Модификаторы --- */
 .full-width {
-    grid-column: 1 / -1; /* Растянуть на всю ширину родительской сетки */
+    grid-column: 1 / -1;
 }
 
 .col-span-4 {
     grid-column: span 4;
 }
 
-.card-project p {
+.card-content-centered {
+    align-items: center;
+    text-align: center;
+}
+
+/* --- Секция: Визовый бот --- */
+.bot-banner {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    text-align: left;
+    background: linear-gradient(135deg, #2c2c2e 0%, #323234 100%);
+    border: 1px solid rgba(238, 146, 100, 0.2);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.bot-banner::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 140px; height: 140px;
+    background: radial-gradient(circle, rgba(238,146,100,0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.bot-banner-icon {
+    font-size: 48px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.bot-banner-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.bot-banner-text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    color: var(--text-color);
+}
+
+.bot-banner-text p {
     font-size: 14px;
     color: var(--text-secondary-color);
-    margin: 0;
-    line-height: 1.4;
+    margin: 0 0 14px;
+    line-height: 1.5;
 }
 
-/* Новый класс для центрирования содержимого карточки */
-.card-content-centered {
-    align-items: center; /* Центрирует flex-элементы (img, h3, p) по горизонтали */
-    text-align: center;  /* Текст внутри h3 и p будет отцентрирован по наследованию */
+.bot-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 18px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* --- Адаптивность для мобильных устройств --- */
+.bot-cta-btn:hover {
+    opacity: 0.88;
+    transform: scale(1.03);
+}
+
+.bot-stat-card {
+    padding: 18px 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+}
+
+.bot-stat-card .stat-emoji {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.bot-stat-card .stat-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1;
+}
+
+.bot-stat-card .stat-label {
+    font-size: 13px;
+    color: var(--text-secondary-color);
+    line-height: 1.3;
+}
+
+/* --- Адаптивность --- */
 @media (max-width: 600px) {
     .grid-2-col, .grid-4-col {
-        grid-template-columns: 1fr; /* Всегда одна колонка на маленьких экранах */
+        grid-template-columns: 1fr;
     }
 
     .col-span-4 {
-        grid-column: span 1; /* Отменяем растягивание */
+        grid-column: span 1;
     }
 
     .grid-4-col {
-        grid-template-columns: repeat(4, 1fr); /* Но для маленьких иконок оставляем 4 колонки */
+        grid-template-columns: repeat(4, 1fr);
     }
-    
-    .card-project { /* На мобильных снова 1 колонка */
+
+    .card-project {
         grid-column: 1 / -1;
     }
-    
+
     .profile-actions {
         flex-wrap: wrap;
     }
-    
+
     .profile-picture {
-        width: 95%; /* Уменьшаем ширину фото на мобильных для отступов по бокам */
+        width: 95%;
     }
-    
+
     .card.full-width.card-content-centered {
-        align-items: flex-start; /* Выравнивает flex-элементы (img, h3, p) по левому краю */
-        text-align: left;       /* Выравнивает текст внутри h3 и p по левому краю */
+        align-items: flex-start;
+        text-align: left;
     }
-}
-@media (max-width: 767.98px) {
-    .grid-4-col {
-        grid-template-columns: repeat(2, 1fr); /* Две колонки */
+
+    .bot-banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bot-banner-icon {
+        font-size: 40px;
     }
 }
 
-/* Для экранов шириной до 480px (например, смартфоны) */
+@media (max-width: 767.98px) {
+    .grid-4-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 479.98px) {
     .grid-4-col {
-        grid-template-columns: 1fr; /* Одна колонка, элементы друг под другом */
+        grid-template-columns: 1fr;
     }
-        .card-payment-type {
+
+    .card-payment-type {
         position: absolute;
-        top: 16px; /* Отступ сверху внутри карточки */
-        right: 16px; /* Отступ справа внутри карточки */
-        width: auto; /* Ширина по содержимому */
+        top: 16px;
+        right: 16px;
+        width: auto;
         text-align: right;
     }
-        .card.card-content-centered .card-payment-type {
+
+    .card.card-content-centered .card-payment-type {
         text-align: right;
     }
 }
