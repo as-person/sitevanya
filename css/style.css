@@ -481,3 +481,102 @@ section {
         text-align: right;
     }
 }
+/* ================================================== */
+/* Счётчик подписчиков — добавить в конец style.css   */
+/* ================================================== */
+
+.subscriber-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.subscriber-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.subscriber-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.subscriber-tg-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.subscriber-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.subscriber-label {
+    font-size: 13px;
+    color: var(--text-secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.subscriber-count {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1;
+    min-height: 1em;
+}
+
+.subscriber-loading {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.subscriber-loading span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--text-secondary-color);
+    animation: sub-bounce 1.2s infinite ease-in-out both;
+}
+
+.subscriber-loading span:nth-child(1) { animation-delay: -0.32s; }
+.subscriber-loading span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes sub-bounce {
+    0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+    40%            { transform: scale(1);   opacity: 1;   }
+}
+
+.subscriber-right { flex-shrink: 0; }
+
+.subscriber-cta {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    .subscriber-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subscriber-cta {
+        width: 100%;
+        text-align: center;
+    }
+}
