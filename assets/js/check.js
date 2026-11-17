@@ -53,12 +53,10 @@
     return e;
   }
 
-  var slashSvg = out.querySelector('.slash');
 
   function reset() {
     out.classList.remove('is-drawing');
     out.innerHTML = '';
-    if (slashSvg) out.appendChild(slashSvg);
   }
 
   function render(data, row) {
