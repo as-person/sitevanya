@@ -443,3 +443,10 @@ p { margin: 0; text-wrap: pretty; }
 /* диагональ убрана по просьбе владельца */
 .mega { padding-right: 0; }
 .result { padding-right: 18px; }
+
+/* меню на телефоне: влезает целиком, без прокрутки */
+@media (max-width: 600px) {
+  .nav-long { display: none; }
+  .nav::after { display: none; }
+  .nav-scroll { justify-content: space-between; gap: 0 12px; padding-right: 0; overflow: visible; }
+}

@@ -45,7 +45,7 @@ function page({ depth, title, desc, path, body, current = '', og = 'assets/img/o
   const r = up(depth);
   const nav = [
     ['visa/', 'Визы', 'visa'],
-    ['guide/annapurna/', 'Гайд по Аннапурне', 'guide'],
+    ['guide/annapurna/', 'Гайд<span class="nav-long"> по Аннапурне</span>', 'guide'],
     ['#polezno', 'Полезное', 'cheats'],
     ['#obo-mne', 'Обо мне', 'about'],
   ].map(([href, label, key]) => `<a href="${r}${href}"${current === key ? ' aria-current="page"' : ''}>${label}</a>`).join('');
