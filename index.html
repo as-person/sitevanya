@@ -1,191 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Иван Шматов: Все о путешествиях</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Иван Шматов — нужна ли виза, гайды и честные цены из поездок</title>
+<meta name="description" content="Проверьте за 5 секунд, нужна ли виза: 196 паспортов, включая Россию, Беларусь, Казахстан и другие страны СНГ. Бесплатный гайд по треку вокруг Аннапурны и разборы из поездок.">
+<link rel="canonical" href="https://as-person.github.io/sitevanya/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Иван Шматов">
+<meta property="og:title" content="Иван Шматов — нужна ли виза, гайды и честные цены из поездок">
+<meta property="og:description" content="Проверьте за 5 секунд, нужна ли виза: 196 паспортов, включая Россию, Беларусь, Казахстан и другие страны СНГ. Бесплатный гайд по треку вокруг Аннапурны и разборы из поездок.">
+<meta property="og:url" content="https://as-person.github.io/sitevanya/">
+<meta property="og:image" content="https://as-person.github.io/sitevanya/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="./assets/fonts/tektur-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/golos-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Иван Шматов","url":"https://as-person.github.io/sitevanya/","sameAs":["https://t.me/shmatov_ivan","https://www.youtube.com/@IvanShmatov","https://dzen.ru/id/5ff2362bfe4e686f6a7f4254"]}</script>
 </head>
 <body>
+<a class="skip" href="#main">К содержанию</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-tg" viewBox="0 0 24 24"><path d="M21.6 3.4 2.6 10.8l6 2.1 2.2 6.6 3.2-4 4.9 3.7 2.7-15.8ZM8.6 12.9l10.8-7.5-8.6 9.6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h17M13.5 5.5 20 12l-6.5 6.5"/></symbol>
+<symbol id="i-out" viewBox="0 0 24 24"><path d="M6 18 18 6M8.5 6H18v9.5"/></symbol>
+</svg>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./">Иван Шматов<span class="sr-only">, на главную</span></a>
+    <nav class="nav" aria-label="Разделы"><div class="nav-scroll"><a href="./visa/">Визы</a><a href="./guide/annapurna/">Гайд по Аннапурне</a><a href="./#polezno">Полезное</a><a href="./#obo-mne">Обо мне</a></div></nav>
+    <a class="btn btn--ghost head-tg" href="https://t.me/shmatov_ivan" rel="noopener" aria-label="Telegram-канал"><span class="label">Telegram-канал</span><svg class="ic" aria-hidden="true"><use href="#i-tg"/></svg></a>
+  </div>
+</header>
+<main id="main">
 
-    <div class="main-container">
-
-        <!-- Секция: Профиль -->
-        <section class="profile">
-            <div class="profile-info">
-                <img src="images/photo_ivan.webp" alt="Фотография Ивана Шматова" class="profile-picture">
-                <h1>Иван Шматов <img src="images/verified.svg" alt="Галочка верификации" width="16" height="16" style="display: inline-block; vertical-align: middle; margin-left: -3px;"></h1>
-                <div class="profile-actions">
-                    <a href="https://t.me/shmatov_ivan" target="_blank" class="btn btn-secondary"><img src="images/telegram_logo.webp" alt="Логотип Telegram" width="16" height="16">Подписаться</a>
-                    <a href="/sitevanya/donate/" class="btn btn-primary">Задонатить</a>
-                </div>
-                <p>Однажды я бросил всё и начал путешествовать по миру.</p>
-                <p>Реклама: <a href="https://t.me/shmatov_ivan_claraterra" target="_blank" class="link-advertisement">@shmatov_ivan_claraterra</a></p>
-            </div>
-        </section>
-        <section>
-            <h2>Присоединяйся</h2>
-            <a href="https://t.me/shmatov_ivan" target="_blank" class="card subscriber-card">
-                <div class="subscriber-left">
-                    <img src="images/telegram_logo.webp" alt="Telegram" class="subscriber-tg-icon">
-                    <div class="subscriber-text">
-                        <span class="subscriber-label">подписчиков в Telegram</span>
-                        <span class="subscriber-count" id="tg-sub-count">
-                            <span class="subscriber-loading"><span></span><span></span><span></span></span>
-                        </span>
-                    </div>
-                </div>
-                <div class="subscriber-right">
-                    <span class="subscriber-cta">Будь следующим →</span>
-                </div>
-            </a>
-        </section>
-        <!-- Секция: Каналы -->
-        <section>
-            <h2>Каналы</h2>
-            <div class="grid grid-2-col">
-                <a href="https://t.me/ivan_shmatov" target="_blank" class="card card-link">
-                    <img src="images/telegram_logo.webp" alt="Логотип Телеграм" class="card-link-icon"> Телеграм канал
-                </a>
-                <a href="https://www.youtube.com/@IvanShmatov" target="_blank" class="card card-link">
-                    <img src="images/youtube_logo.webp" alt="Логотип YouTube" class="card-link-icon"> YouTube канал
-                </a>
-                <a href="https://vk.com/im/channels/-230976446" target="_blank" class="card card-link">
-                    <img src="images/vk_logo.webp" alt="Логотип ВК" class="card-link-icon"> Канал в ВК
-                </a>
-                <a href="https://dzen.ru/id/5ff2362bfe4e686f6a7f4254" target="_blank" class="card card-link">
-                    <img src="images/zen_logo.webp" alt="Логотип Дзен" class="card-link-icon"> Дзен
-                </a>
-            </div>
-        </section>
-
-        <!-- Секция: Поддержка -->
-        <section>
-            <h2>Поддержать меня</h2>
-            <div class="grid grid-2-col">
-                <a href="/sitevanya/donate/" class="card card-icon-top full-width">
-                    <div class="image-row-container">
-                        <img src="images/tbank_logo.webp" alt="Логотип Т-Банка" class="icon-large-img">
-                        <img src="images/boosty.webp" alt="Логотип Бусти" class="icon-large-img">
-                        <img src="images/tribute.webp" alt="Логотип Tribute" class="icon-large-img">
-                        <img src="images/patreon.webp" alt="Логотип Patreon" class="icon-large-img">
-                        <img src="images/paypal.webp" alt="Логотип PayPal" class="icon-large-img">
-                        <img src="images/crypto.webp" alt="Крипто" class="icon-large-img">
-                    </div>
-                    Все способы мне задонатить 😉
-                </a>
-            </div>
-        </section>
-
-        <!-- Секция: Посты -->
-        <section>
-            <h2>Посты</h2>
-            <div class="grid grid-2-col">
-                <a href="https://t.me/shmatov_ivan/520" target="_blank" class="card card-project">
-                    <img src="images/telegram_logo.webp" alt="Логотип поста">
-                    <h3>Давайте знакомиться!</h3>
-                    <p>Добро пожаловать, рад каждому из вас. Давайте познакомимся, а заодно расскажу, как я пришёл к такому образу жизни...</p>
-                </a>
-                <a href="https://www.youtube.com/shorts/tR72ud3tVYw" target="_blank" class="card card-project">
-                    <img src="images/youtube_logo.webp" alt="Логотип поста">
-                    <h3>Про деньги</h3>
-                    <p>Сколько стоит облететь весь мир?</p>
-                </a>
-                <a href="https://vk.com/im/channels/-230976446?cmid=1" target="_blank" class="card card-project">
-                    <img src="images/vk_logo.webp" alt="Логотип поста">
-                    <h3>Теперь в ВК</h3>
-                    <p>Ребята, в этом канале я буду публиковать полезную информацию, которой не будет...</p>
-                </a>
-                <a href="https://dzen.ru/b/Yk6LIYPl_XdHJwol" target="_blank" class="card card-project">
-                    <img src="images/zen_logo.webp" alt="Логотип поста">
-                    <h3>Мой путь</h3>
-                    <p>2019 год: 6 марта: я увольняюсь с работы в Московском аэропорту, и в этот же день улетаю в Китай для работы учителем английского...</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- Секция: Визовый бот -->
-        <section>
-            <h2>Мой инструмент для путешествий</h2>
-            <div class="grid grid-2-col">
-                <a href="https://t.me/visacheck_shmatov_bot" target="_blank" class="card bot-banner">
-                    <div class="bot-banner-icon">🗺️</div>
-                    <div class="bot-banner-text">
-                        <h3>Проверить визу за 5 секунд</h3>
-                        <p>Сделал бота, которым сам пользуюсь перед каждой поездкой — виза нужна или нет, сколько дней, все нюансы.</p>
-                        <span class="bot-cta-btn">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.7 8c-.12.55-.44.68-.9.42l-2.5-1.84-1.2 1.16c-.13.13-.24.24-.5.24l.18-2.52 4.56-4.12c.2-.18-.04-.28-.3-.1L8.12 14.4l-2.46-.77c-.54-.17-.55-.54.11-.8l9.6-3.7c.44-.16.84.1.27.67z" fill="white"/>
-                            </svg>
-                            Открыть бота
-                        </span>
-                    </div>
-                </a>
-                <div class="card bot-stat-card">
-                    <div class="stat-emoji">🌍</div>
-                    <div class="stat-value">190+</div>
-                    <div class="stat-label">стран в базе данных бота</div>
-                </div>
-                <div class="card bot-stat-card">
-                    <div class="stat-emoji">⚡</div>
-                    <div class="stat-value">5 сек</div>
-                    <div class="stat-label">и знаешь нужна ли виза</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секция: Соцсети -->
-        <section>
-            <h2>Всякую всячину сюда</h2>
-            <div class="grid grid-4-col">
-                <a href="#" class="card card-icon-top col-span-4">
-                    <span class="icon-large">💬</span>
-                    Тыры-пыры
-                </a>
-                <a href="#" class="card card-icon-top col-span-4">
-                    <span class="icon-large">📰</span>
-                    Трали-вали
-                </a>
-                <a href="#" class="card card-icon-only"><span class="icon-small">Ещё</span></a>
-                <a href="#" class="card card-icon-only"><span class="icon-small">Всякие</span></a>
-                <a href="#" class="card card-icon-only"><span class="icon-small">Разные</span></a>
-                <a href="#" class="card card-icon-only"><span class="icon-small">Кнопочки</span></a>
-            </div>
-        </section>
-
-        <!-- Секция: Все посты -->
-        <section>
-            <h2>Всё что угодно можно сюда воткнуть</h2>
-            <div class="grid">
-                <a href="#" class="card card-link">
-                    Показать весь список (чего угодно)
-                </a>
-            </div>
-        </section>
-
+<section class="band hero" aria-labelledby="hero-title">
+  <div class="wrap split">
+    <div>
+      <h1 id="hero-title" class="mega">Виза?</h1>
+      <p class="meta"><span>900+ проверок в боте</span><span>196 паспортов</span><span>190+ стран</span></p>
+      <figure class="portrait">
+        <img src="assets/img/trips/ivan.webp" alt="Иван Шматов на треке в Непале" width="600" height="750" fetchpriority="high">
+        <figcaption>
+          <p class="quote">Проверяю визы перед каждой своей поездкой. Здесь та же база, что в моём боте.</p>
+          <p class="sign">Иван Шматов<span>путешествую сам с 2019 года</span></p>
+        </figcaption>
+      </figure>
     </div>
-<script>
-(function () {
-    const el = document.getElementById('tg-sub-count');
-    if (!el) return;
- 
-    fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://t.me/shmatov_ivan'))
-        .then(r => r.json())
-        .then(data => {
-            const match = data.contents.match(/(\d[\d\s]{1,9})\s*(members|subscribers|участник)/i);
-            if (match) {
-                const num = parseInt(match[1].replace(/\s/g, ''), 10);
-                el.textContent = num.toLocaleString('ru-RU');
-            } else {
-                el.textContent = '—';
-            }
-        })
-        .catch(() => { el.textContent = '—'; });
-})();
-</script>
+    <div>
+      <h2 class="panel-title" id="check-title">Проверка визы</h2>
+    <form class="checker" data-checker data-root="./" action="./visa/" autocomplete="off" aria-labelledby="check-title">
+      <div class="row"><label for="f-passport">Паспорт:</label><select id="f-passport" name="passport"><optgroup label="Страны СНГ"><option value="RU" selected>Россия</option><option value="BY">Беларусь</option><option value="KZ">Казахстан</option><option value="UZ">Узбекистан</option><option value="KG">Кыргызстан</option><option value="TJ">Таджикистан</option><option value="AM">Армения</option><option value="AZ">Азербайджан</option><option value="UA">Украина</option></optgroup><optgroup label="Все страны"><option value="AU">Австралия</option><option value="AT">Австрия</option><option value="AL">Албания</option><option value="DZ">Алжир</option><option value="AO">Ангола</option><option value="AD">Андорра</option><option value="AG">Антигуа и Барбуда</option><option value="AR">Аргентина</option><option value="AF">Афганистан</option><option value="BS">Багамы</option><option value="BD">Бангладеш</option><option value="BB">Барбадос</option><option value="BH">Бахрейн</option><option value="BZ">Белиз</option><option value="BE">Бельгия</option><option value="BJ">Бенин</option><option value="BG">Болгария</option><option value="BO">Боливия</option><option value="BA">Босния и Герцеговина</option><option value="BW">Ботсвана</option><option value="BR">Бразилия</option><option value="BN">Бруней</option><option value="BF">Буркина-Фасо</option><option value="BI">Бурунди</option><option value="BT">Бутан</option><option value="VU">Вануату</option><option value="VA">Ватикан</option><option value="GB">Великобритания</option><option value="HU">Венгрия</option><option value="VE">Венесуэла</option><option value="VN">Вьетнам</option><option value="GA">Габон</option><option value="HT">Гаити</option><option value="GY">Гайана</option><option value="GM">Гамбия</option><option value="GH">Гана</option><option value="GT">Гватемала</option><option value="GN">Гвинея</option><option value="GW">Гвинея-Бисау</option><option value="DE">Германия</option><option value="HN">Гондурас</option><option value="HK">Гонконг</option><option value="GD">Гренада</option><option value="GR">Греция</option><option value="GE">Грузия</option><option value="DK">Дания</option><option value="DJ">Джибути</option><option value="DM">Доминика</option><option value="DO">Доминиканская Республика</option><option value="CD">ДР Конго</option><option value="EG">Египет</option><option value="ZM">Замбия</option><option value="ZW">Зимбабве</option><option value="IL">Израиль</option><option value="IN">Индия</option><option value="ID">Индонезия</option><option value="JO">Иордания</option><option value="IQ">Ирак</option><option value="IR">Иран</option><option value="IE">Ирландия</option><option value="IS">Исландия</option><option value="ES">Испания</option><option value="IT">Италия</option><option value="YE">Йемен</option><option value="CV">Кабо-Верде</option><option value="KH">Камбоджа</option><option value="CM">Камерун</option><option value="CA">Канада</option><option value="QA">Катар</option><option value="KE">Кения</option><option value="CY">Кипр</option><option value="KI">Кирибати</option><option value="CN">Китай</option><option value="CO">Колумбия</option><option value="KM">Коморы</option><option value="CG">Конго</option><option value="XK">Косово</option><option value="CR">Коста-Рика</option><option value="CI">Кот-д'Ивуар</option><option value="CU">Куба</option><option value="KW">Кувейт</option><option value="LA">Лаос</option><option value="LV">Латвия</option><option value="LS">Лесото</option><option value="LR">Либерия</option><option value="LB">Ливан</option><option value="LY">Ливия</option><option value="LT">Литва</option><option value="LI">Лихтенштейн</option><option value="LU">Люксембург</option><option value="MU">Маврикий</option><option value="MR">Мавритания</option><option value="MG">Мадагаскар</option><option value="MO">Макао</option><option value="MW">Малави</option><option value="MY">Малайзия</option><option value="ML">Мали</option><option value="MV">Мальдивы</option><option value="MT">Мальта</option><option value="MA">Марокко</option><option value="MH">Маршалловы Острова</option><option value="MX">Мексика</option><option value="FM">Микронезия</option><option value="MZ">Мозамбик</option><option value="MD">Молдова</option><option value="MC">Монако</option><option value="MN">Монголия</option><option value="MM">Мьянма</option><option value="NA">Намибия</option><option value="NR">Науру</option><option value="NP">Непал</option><option value="NE">Нигер</option><option value="NG">Нигерия</option><option value="NL">Нидерланды</option><option value="NI">Никарагуа</option><option value="NZ">Новая Зеландия</option><option value="NO">Норвегия</option><option value="AE">ОАЭ</option><option value="OM">Оман</option><option value="PK">Пакистан</option><option value="PW">Палау</option><option value="PS">Палестина</option><option value="PA">Панама</option><option value="PG">Папуа Новая Гвинея</option><option value="PY">Парагвай</option><option value="PE">Перу</option><option value="PL">Польша</option><option value="PT">Португалия</option><option value="RW">Руанда</option><option value="RO">Румыния</option><option value="SV">Сальвадор</option><option value="WS">Самоа</option><option value="SM">Сан-Марино</option><option value="SA">Саудовская Аравия</option><option value="MK">Северная Македония</option><option value="SC">Сейшелы</option><option value="SN">Сенегал</option><option value="VC">Сент-Винсент и Гренадины</option><option value="KN">Сент-Китс и Невис</option><option value="LC">Сент-Люсия</option><option value="RS">Сербия</option><option value="SG">Сингапур</option><option value="SY">Сирия</option><option value="SK">Словакия</option><option value="SI">Словения</option><option value="SB">Соломоновы Острова</option><option value="SO">Сомали</option><option value="SD">Судан</option><option value="SR">Суринам</option><option value="US">США</option><option value="SL">Сьерра-Леоне</option><option value="TH">Таиланд</option><option value="TW">Тайвань</option><option value="TZ">Танзания</option><option value="TL">Тимор-Лесте</option><option value="TG">Того</option><option value="TO">Тонга</option><option value="TT">Тринидад и Тобаго</option><option value="TN">Тунис</option><option value="TM">Туркменистан</option><option value="TR">Турция</option><option value="UG">Уганда</option><option value="UY">Уругвай</option><option value="FJ">Фиджи</option><option value="PH">Филиппины</option><option value="FI">Финляндия</option><option value="FR">Франция</option><option value="HR">Хорватия</option><option value="CF">ЦАР</option><option value="TD">Чад</option><option value="ME">Черногория</option><option value="CZ">Чехия</option><option value="CL">Чили</option><option value="CH">Швейцария</option><option value="SE">Швеция</option><option value="LK">Шри-Ланка</option><option value="EC">Эквадор</option><option value="GQ">Экваториальная Гвинея</option><option value="ER">Эритрея</option><option value="SZ">Эсватини</option><option value="EE">Эстония</option><option value="ET">Эфиопия</option><option value="ZA">ЮАР</option><option value="KR">Южная Корея</option><option value="SS">Южный Судан</option><option value="JM">Ямайка</option><option value="JP">Япония</option></optgroup></select></div>
+      <div class="row"><label for="f-dest">Куда:</label><input id="f-dest" name="dest" list="dest-list" placeholder="Например, Таиланд" value="Япония" required></div>
+      <datalist id="dest-list"></datalist>
+      <button class="btn btn--wide" type="submit">Проверить<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    </form>
+    <div class="result" data-answer aria-live="polite"><p class="from">Россия → Япония</p>
+      <p class="verdict" data-status="required">Нужна виза</p>
+      
+      <p class="note"><a href="https://t.me/shmatov_ivan/2946" rel="noopener" target="_blank">Как оформить визу в Японию</a></p>
+      <p class="more"><a class="btn btn--ghost btn--sm" href="./visa/rossiya/yaponiya/">Подробнее: Япония<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></p></div>
+    </div>
+  </div>
+</section>
+<section class="band guide-row" aria-labelledby="guide-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="guide-title"><a href="guide/annapurna/">Трек вокруг Аннапурны</a></h2>
+      <ul class="stats"><li><b>58</b><span>страниц в бесплатном PDF</span></li><li><b>17</b><span>дней пешком</span></li><li><b>5 416</b><span>метров — Торонг-Ла</span></li><li><b>≈22 400 ₽</b><span>еда и жильё за 16 дней</span></li></ul>
+      <div class="btn-row">
+      <a class="btn" href="https://t.me/visacheck_shmatov_bot?start=guides" rel="noopener">Забрать бесплатно в боте<svg class="ic" aria-hidden="true"><use href="#i-tg"/></svg></a>
+      <a class="btn btn--ghost" href="guide/annapurna/">Что внутри<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <p class="note">Маршрут по дням, реальные цены в рупиях и рублях, документы и акклиматизация — по нашему походу осенью 2026 года.</p>
+    </div>
+    <div>
+      <a class="plate" href="guide/annapurna/" aria-label="Подробнее о гайде по Аннапурне"><img src="assets/img/annapurna-dots.png" alt="Склон Аннапурны, растровая сетка из фото с трека" width="900" height="600" loading="lazy"><span class="cap"><span>Аннапурна · 8 091 м</span><span>Подробнее →</span></span></a>
+    </div>
+  </div>
+</section>
+<section class="section band" aria-labelledby="trips-title">
+  <div class="wrap">
+    <div class="section-head"><h2 id="trips-title">Где был сам</h2><p>Каждое фото ведёт на пост: как туда добраться и сколько это стоило.</p></div>
+    <div class="trips"><a class="trip" href="https://t.me/shmatov_ivan/3129" rel="noopener"><img src="assets/img/trips/tilicho.webp" alt="Озеро Тиличо, 4 919 м" width="600" height="750"><span class="cap"><span><b>Озеро Тиличо, 4 919 м</b><small>Непал · ноябрь 2026</small></span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></span></a><a class="trip" href="https://t.me/shmatov_ivan/3025" rel="noopener"><img src="assets/img/trips/larkya-pass.webp" alt="Перевал Ларкья-Ла, 5 106 м" width="600" height="750" loading="lazy"><span class="cap"><span><b>Перевал Ларкья-Ла, 5 106 м</b><small>Непал · октябрь 2026</small></span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></span></a><a class="trip" href="https://t.me/shmatov_ivan/2445" rel="noopener"><img src="assets/img/trips/perito-moreno.webp" alt="Ледник Перито-Морено" width="600" height="750" loading="lazy"><span class="cap"><span><b>Ледник Перито-Морено</b><small>Аргентина · январь 2026</small></span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></span></a><a class="trip" href="https://t.me/shmatov_ivan/2504" rel="noopener"><img src="assets/img/trips/iguazu.webp" alt="Водопады Игуасу" width="600" height="750" loading="lazy"><span class="cap"><span><b>Водопады Игуасу</b><small>Аргентина и Бразилия · 2026</small></span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></span></a><a class="trip" href="https://t.me/shmatov_ivan/2890" rel="noopener"><img src="assets/img/trips/papua.webp" alt="Энаротали, Папуа" width="600" height="750" loading="lazy"><span class="cap"><span><b>Энаротали, Папуа</b><small>Индонезия · 2024</small></span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></span></a></div>
+  </div>
+</section>
+<section class="section band" id="polezno" aria-labelledby="cheats-title">
+  <div class="wrap">
+    <div class="section-head"><h2 id="cheats-title">Перед поездкой</h2><p>Пошаговые разборы из канала: что сделал, сколько заплатил, где споткнулся.</p></div>
+    <div class="split split--even"><div class="cheat"><h3>Визы, которые я оформлял сам</h3><ul><li><a href="https://t.me/shmatov_ivan/2946" rel="noopener"><b>Виза в Японию</b><span>визовый центр, справки, программа поездки</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/2879" rel="noopener"><b>Виза в Великобританию</b><span>сколько стоит и где сдавать биометрию</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/70" rel="noopener"><b>Виза в Индию</b><span>e-Visa на 30 дней, год и 5 лет</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/488" rel="noopener"><b>Виза в Австралию</b><span>подача, биометрия, сроки</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/674" rel="noopener"><b>Виза в Индонезию</b><span>по прилёту и электронная</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/196" rel="noopener"><b>Виза во Вьетнам</b><span>e-visa и безвиз на 45 дней</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/686" rel="noopener"><b>Сингапур</b><span>транзит 96 часов без визы</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/8" rel="noopener"><b>Виза в Непал</b><span>по прилёту в Катманду</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li></ul></div><div class="cheat"><h3>Деньги, связь, мелочи</h3><ul><li><a href="https://t.me/shmatov_ivan/2951" rel="noopener"><b>Банковская карта во Вьетнаме в 2026</b><span>BIDV по загранпаспорту и туристической визе</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/3113" rel="noopener"><b>Карта в Непале за 13 ₽</b><span>Khalti: QR, виртуальная карта, пополнение криптой</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/2969" rel="noopener"><b>Сим-карта для трека вокруг Аннапурны</b><span>NTC против Ncell, 100 ГБ за 700 ₽</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/2968" rel="noopener"><b>Пермит на Аннапурну</b><span>3 000 рупий, 5 минут в иммиграционном офисе</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/99" rel="noopener"><b>Бизнес-зал бесплатно</b><span>без премиальных карт</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li><li><a href="https://t.me/shmatov_ivan/529" rel="noopener"><b>Кемпинги в Новой Зеландии</b><span>где можно спать бесплатно, а где штраф</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></li></ul></div></div>
+  </div>
+</section>
+<section class="section about" id="obo-mne" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="section-head"><h2 id="about-title">Обо мне</h2></div>
+    <div class="split split--about">
+      <div>
+        <p class="intro">Работал в московском аэропорту. 6 марта 2019 года уволился и в тот же день улетел в Китай — с тех пор в дороге.</p>
+        <ol class="timeline">
+          <li><span class="y">2019</span><div><b>Китай и Вьетнам</b><p>Учитель английского в Китае, потом Ханой и Дананг.</p></div></li>
+          <li><span class="y">2019</span><div><b>Корея с $50 в кармане</b><p>41 день работы и 19 дней путешествий — вывез из страны $2 500.</p></div></li>
+          <li><span class="y">2021</span><div><b>Автостопом до Магадана</b><p>Зимой через всю страну, по Колыме.</p></div></li>
+          <li><span class="y">2024</span><div><b>Папуа и Эверест</b><p>Задержали военные в Энаротали, позже — одиночный поход к базовому лагерю Эвереста.</p></div></li>
+          <li><span class="y">2025–26</span><div><b>22 страны соло</b><p>От Гонконга и Австралии до Патагонии, Перу и Парагвая.</p></div></li>
+          <li><span class="y">2026</span><div><b>Аннапурна и Манаслу</b><p>17 дней пешком, два перевала выше 5 000 м — и гайд по итогам.</p></div></li>
+        </ol>
+      </div>
+      <div class="about-photos">
+        <figure><img src="assets/img/trips/team.webp" alt="Иван с друзьями на финише трека вокруг Аннапурны" width="600" height="450" loading="lazy"><figcaption>Финиш трека вокруг Аннапурны, 2026</figcaption></figure>
+        <figure><img src="assets/img/trips/hongkong.webp" alt="Иван в Гонконге" width="600" height="450" loading="lazy"><figcaption>Гонконг</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-cta">
+      <div>
+        <h2>Пишу о том, где был сам</h2>
+        <p>Визы, реальные цены по дням, банковские карты и сим-карты за границей, треки. Всё это сначала выходит в Telegram-канале.</p>
+      </div>
+      <a class="btn" href="https://t.me/shmatov_ivan" rel="noopener">Подписаться на канал<svg class="ic" aria-hidden="true"><use href="#i-tg"/></svg></a>
+    </div>
+    <div class="foot-links">
+      <ul>
+        <li><a href="https://t.me/shmatov_ivan" rel="noopener">Telegram</a></li>
+        <li><a href="https://t.me/visacheck_shmatov_bot" rel="noopener">Визовый бот</a></li>
+        <li><a href="https://www.youtube.com/@IvanShmatov" rel="noopener">YouTube</a></li>
+        <li><a href="https://vk.com/club230976446" rel="noopener">ВКонтакте</a></li>
+        <li><a href="https://dzen.ru/id/5ff2362bfe4e686f6a7f4254" rel="noopener">Дзен</a></li>
+      </ul>
+      <ul>
+        <li>Реклама и вопросы: <a href="https://t.me/shmatov_ivan_claraterra" rel="noopener">@shmatov_ivan_claraterra</a></li>
+        <li><a href="https://www.tbank.ru/cf/A9KI33VJCd3" rel="noopener">Поддержать автора</a></li>
+      </ul>
+    </div>
+    <p class="disclaimer">Визовые правила меняются. Данные — из базы визового бота: паспорта стран СНГ проверены вручную, остальные собраны из открытых источников. Перед поездкой сверяйтесь с сайтом посольства. © 2026 Иван Шматов</p>
+  </div>
+</footer>
+<script src="./assets/js/check.js" defer></script>
 </body>
 </html>

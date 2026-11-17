@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://as-person.github.io/sitevanya/sitemap.xml
